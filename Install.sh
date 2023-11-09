@@ -19,7 +19,7 @@ if ! command -v nuclei &> /dev/null; then
 fi
 
 # Rename and move autonuc.sh file to /usr/bin/autonuc
-sudo mv autonuc.sh /usr/bin/autonuc
+sudo mv Autonuc.sh /usr/bin/autonuc
 
 # Make the Autonuc file executable
 sudo chmod +x /usr/local/bin/autonuc
