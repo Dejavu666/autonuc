@@ -22,7 +22,7 @@ fi
 sudo mv Autonuc.sh /usr/bin/autonuc
 
 # Make the Autonuc file executable
-sudo chmod +x /usr/local/bin/autonuc
+sudo chmod +x /usr/bin/autonuc
 
 # Remove the Autonuc folder from the home directory
 if [ -d "$home_dir/Autonuc" ]; then
