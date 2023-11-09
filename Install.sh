@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# update linux
+sudo apt update && sudo apt upgrade -y
+
 # Check if subfinder is installed, if not, install it
 if ! command -v subfinder &> /dev/null; then
     echo "Installing subfinder..."
