@@ -25,9 +25,9 @@ sudo mv Autonuc.sh /usr/bin/autonuc
 sudo chmod +x /usr/bin/autonuc
 
 # Remove the Autonuc folder from the home directory
-if [ -d "$home_dir/Autonuc" ]; then
+if [ -d "$home_dir/autonuc" ]; then
     echo "Removing Autonuc folder..."
-    rm -r "$home_dir/Autonuc"
+    rm -r "$home_dir/autonuc"
 fi
 
 echo "Autonuc has been installed successfully! Now Enter the command 'autonuc' to run the tool."
