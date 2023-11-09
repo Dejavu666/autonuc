@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo 'Silahkan ketikkan url untuk auto scanning'
+echo 'Silahkan ketikkan url untuk auto scanning example: autonuc example.com'
 
 url=$1
 
