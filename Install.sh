@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# update linux
-sudo apt update && sudo apt upgrade -y
-
 # Check if subfinder is installed, if not, install it
 if ! command -v subfinder &> /dev/null; then
     echo "Installing subfinder..."
@@ -20,6 +17,9 @@ if ! command -v nuclei &> /dev/null; then
     echo "Installing Nuclei..."
     go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
 fi
+
+# update nuclei template
+nuclei -ut
 
 # Rename and move autonuc.sh file to /usr/bin/autonuc
 sudo mv Autonuc.sh /usr/bin/autonuc
