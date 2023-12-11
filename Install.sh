@@ -7,7 +7,7 @@ if ! command -v subfinder &> /dev/null; then
 fi
 
 # Check if httpx is installed, if not, install it
-if ! command -v httpx-toolkit &> /dev/null; then
+if ! command -v httpx &> /dev/null; then
     echo "Installing httpx..."
     sudo apt install httpx
 fi
