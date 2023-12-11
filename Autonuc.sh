@@ -5,7 +5,7 @@ echo 'Silahkan ketikkan url untuk auto scanning example: autonuc example.com'
 url=$1
 
 echo 'Sedang scanning active sub domain $url...'
-subfinder -d $url -o subfinder.txt && httpx-toolkit -l subfinder.txt -mc 200 | tee domainact.txt
+subfinder -d $url -o subfinder.txt && httpx -l subfinder.txt -mc 200 | tee domainact.txt
 
 rm subfinder.txt
 
