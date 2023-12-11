@@ -8,8 +8,8 @@ fi
 
 # Check if httpx is installed, if not, install it
 if ! command -v httpx-toolkit &> /dev/null; then
-    echo "Installing httpx-toolkit..."
-    sudo apt install httpx-toolkit
+    echo "Installing httpx..."
+    sudo apt install httpx
 fi
 
 # Check if nuclei is installed, if not, install it
